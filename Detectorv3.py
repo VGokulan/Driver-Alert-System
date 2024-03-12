@@ -21,8 +21,8 @@ class Detector:
         self.sms_interval = 10  # seconds
 
         # Twilio credentials
-        account_sid = os.environ['TWILIO_ACCOUNT_SID'] = 'AC5bff6cda54e4af1f2166ec6cffcec7a9'
-        auth_token = os.environ['TWILIO_AUTH_TOKEN'] = '139d8931f33c9d6d8ca4bbd260b1f946'
+        account_sid = os.environ['TWILIO_ACCOUNT_SID'] = 'Enter TWILIO_ACCOUNT_SID'
+        auth_token = os.environ['TWILIO_AUTH_TOKEN'] = 'Enter TWILIO_AUTHORIZATION_TOKEN'
         self.twilio_client = Client(account_sid, auth_token)
 
     def readClasses(self, classesFilePath):
@@ -54,8 +54,8 @@ class Detector:
         print("Model " + self.modelName + " loaded succesfully......")
         
     def send_message(self):
-        from_number = '+19293685453'  # Your Twilio phone number
-        to_number = '+917538864974'  # Replace with the destination phone number
+        from_number = 'Your_Twilio_phone_number' 
+        to_number = 'destination_phone_number'  
 
         message_body = 'Alert: Cell phone detected for about 2 seconds!'
         
@@ -173,14 +173,15 @@ modelURL = "http://download.tensorflow.org/models/object_detection/tf2/20200711/
 
 classFile="coco.names"
 
-imagePath = "C:/Users/gokulan/Downloads/Passenger-distracted-driving.webp"
+imagePath = "image path"
 videoPath = 0
 threshold = 0.5
 
+# Uncomment predictVideo if necessary
 detector=Detector()
 detector.readClasses(classFile)
 detector.downloadModel(modelURL)
 detector.loadModel()
-#detector.predictImage(imagePath, threshold)
-detector.predictVideo(videoPath, threshold)
+detector.predictImage(imagePath, threshold)
+#detector.predictVideo(videoPath, threshold)
 
