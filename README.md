@@ -17,10 +17,10 @@ To get started with SafeDrive, follow these steps:
 
 This project relies on several Python libraries:
 
-1.OpenCV-Python (for computer vision tasks)
-2.TensorFlow (for machine learning and object detection)
-3.NumPy (for numerical computations)
-4.Twilio (optional, for SMS alerts - currently commented out in the script)
+1. OpenCV-Python (for computer vision tasks)
+2. TensorFlow (for machine learning and object detection)
+3. NumPy (for numerical computations)
+4. Twilio (optional, for SMS alerts - currently commented out in the script)
 
 Installation:
 
@@ -54,7 +54,7 @@ Note: If you plan to enable the SMS alert functionality using Twilio, you'll nee
 ## Future Enhancements
 SafeDrive has the potential to be further developed and expanded upon in several exciting ways:
 
-1.Custom Phone Detection Model: Training a custom deep learning model specifically optimized for detecting cell phones in various orientations and positions within a car environment. This could improve accuracy and reliability compared to the current pre-trained model.
-2.Real-time In-vehicle Monitoring: Integrating SafeDrive with a driver-facing camera would enable real-time monitoring within a vehicle. This could provide continuous feedback and potentially trigger alerts for distracted driving behavior.
-3.Multi-distraction Detection: Expanding the system beyond cell phone detection to encompass other forms of driver distraction. This could involve incorporating facial recognition for drowsiness detection, analyzing steering wheel movements, or detecting objects held near the driver's face.
+1. Custom Phone Detection Model: Training a custom deep learning model specifically optimized for detecting cell phones in various orientations and positions within a car environment. This could improve accuracy and reliability compared to the current pre-trained model.
+2. Real-time In-vehicle Monitoring: Integrating SafeDrive with a driver-facing camera would enable real-time monitoring within a vehicle. This could provide continuous feedback and potentially trigger alerts for distracted driving behavior.
+3. Multi-distraction Detection: Expanding the system beyond cell phone detection to encompass other forms of driver distraction. This could involve incorporating facial recognition for drowsiness detection, analyzing steering wheel movements, or detecting objects held near the driver's face.
 By implementing these enhancements, SafeDrive could evolve into a comprehensive driver monitoring system, promoting safer roads and reducing distracted driving accidents.
